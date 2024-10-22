@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
+
+/* start general  */
+/* ##### */
+.header .scroll-down {
+  font-size: 13px;
+  font-family: "Mukta Mahee", sans-serif;
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --font-family-base: "Abril Fatface", Times, serif; /* Set font-family as a variable */
+  --color-base: #65c0ba;
+  --color-light: #6c757d;
+}
+body {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(color-base);
+}
+h1,
+h2,
+h3 {
+  color: #000;
+  font-family: "Abril Fatface", times, serif;
+}
+/* end general  */
+
+/* start navbar  */
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  font-family: var(--font-family-base);
+}
+.navbar .nav-item .nav-link {
+  color: white;
+  transition: color 0.5s ease;
+  font-size: 20px;
+  font-family: var(--font-family-base);
+}
+.navbar .nav-item .active {
+  color: #65c0ba;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #65c0ba;
+}
+/* end navbar  */
+
+/*start header  */
+.header {
+  background-image: url("/images/hero_1.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.header .heading {
+  font-size: 80px;
+  font-family: var(--font-family-base);
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+}
+.header .sub-heading {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 200;
+}
+.header .sub-heading a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+.header .sub-heading a:hover {
+  color: white;
+  text-decoration-color: white;
+}
+.overlay .btn {
+  transition: all 1s ease;
+  font-family: "Mukta Mahee", sans-serif;
+  letter-spacing: 0.2em;
+}
+.overlay .scroll-down {
+  transform: translateX(-50%);
+  font-size: 12px;
+  transition : all 1s ease ;
+}
+
+/*end header  */
+
+/* start section-Welcome  */
+.welcome img {
+  border-style: none;
+}
+.welcome .content h2 {
+  font-family: var(--font-family-base);
+}
+.welcome .content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+.welcome .icon-play {
+  width: 45px;
+  height: 45px;
+  transition: all 0.5s ease;
+}
+
+.welcome .icon-play .fa-play:before {
+  color: var(--color-base);
+}
+
+.welcome .icon-play:hover .fa-play:before {
+  color: black; /* Color on hover */
+}
+.welcome .icon-play:hover {
+  border-color: black; /* Color on hover */
+}
+.welcome .icon-play {
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+}
+.welcome .content span.text {
+  color: var(--color-base);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.content .play-video .text:hover {
+  color: #3f9a94;
+}
+.content .play-video .text:hover .fa-play {
+  color: #000;
+  border-color: #000;
+}
+/* end section-Welcome  */
+
+/* start section-experience  */
+.experience {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+  padding: 7em 0;
+}
+.experience .text {
+  color: var(--color-light);
+}
+.experience .ftco-img-flaticon img {
+  width: 70px;
+}
+.experience .ftco-img-flaticon p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+/* end section-experience  */
+
+/* start slider-section */
+.slider-section .text {
+  color: var(--color-light);
+}
+.slider-header h2 {
+  font-size: 70px;
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+/* home-slider  */
+.home {
+  z-index: 9999
+}
+.home-layer-1,
+.home-layer-2,
+.home-layer-3 {
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.home-layer-1 {
+  background-image: url("/images/slider-1.jpg");
+}
+.home-layer-2 {
+  background-image: url("../images/slider-2.jpg");
+}
+.home-layer-3 {
+  background-image: url("../images/slider-3.jpg");
+}
+.home-layer-4 {
+  background-image: url("../images/slider-4.jpg");
+}
+.home-layer-5 {
+  background-image: url("../images/slider-5.jpg");
+}
+.home-layer-6 {
+  background-image: url("../images/slider-6.jpg");
+}
+.home .slide {
+  height: 100vh !important;
+}
+.carousel-indicators {
+  margin: -55px;
+}
+
+@keyframes moving {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+    opacity: 0.5s;
+  }
+  75% {
+    top: 20px;
+    opacity: 0.7s;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+.carousel .carousel-control-prev i , .carousel .carousel-control-next i {
+  color: #1c817a ;
+  font-size:30px ; 
+}
+
+.carousel-indicators {
+  margin: -55px;
+}
+.carousel-indicators [data-bs-target].active {
+  z-index: 9999;
+  color:var(--color-base)
+}
+.home .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  text-indent: 0;
+  border-radius: 50%;
+  background-color : var(--color-base) ;
+}
+
+.home {
+  margin : 0px 100px ;
+}
+
+/* end slider-section */
+
+
+/* start blog-section */
+
+.blog-post-entry {
+  padding-top: 100px;
+  margin-top: 50px;
+
+  background-color: var(--color-base);
+  /* height: 200vh  ; */
+  position: relative;
+  margin-top: -250px;
+  padding-top: 400px;
+  /* transform: skewY(-10deg); */
+}
+.blog-post-entry .container {
+  /* transform: skewY(10deg);  */
+}
+
+.blog-post-entry .text {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+.blog-post-entry h2 {
+  font-size: 70px;
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.media img {
+  min-width: 100%;
+}
+.media-body p {
+  padding-right: 70px;
+  color: var(--color-light);
+}
+.blog-post-entry .media {
+  background-color: grey;
+}
+.blog-post-entry .media {
+  overflow: hidden;
+}
+.blog-post-entry .media img {
+  transition: transform 1s ease;
+}
+.blog-post-entry .media:hover img {
+  transform: scale(1.1);
+}
+/* end blog-section */
+
+/* start  testimonial*/
+.testimonial-section {
+  
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+}
+.testimonial-header h2 {
+  font-size: 70px;
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.testimonial img {
+    width: 70px;
+}
+
+.testimonial blockquote p {
+  line-height: 1.5;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+.testimonial-text {
+  color:  #6c757d; 
+}
+
+/* end  testimonial*/
+
+
+/* start cutomers */
+
+.cutomers .text {
+  color: var(--color-light);
+  font-weight: 300;
+}
+.cutomers h2 {
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.cutomers .reviews-star i {
+  color : var(--color-base);
+}
+.cutomers .reviews-count{
+  color:#ccc ;
+}
+.cutomers h3 a {
+  color :black ; 
+  transition : color 0.5s ease ; 
+}
+.cutomers h3 a:hover {
+  color : var(--color-base) !important ;
+}
+.cutomers .reviews-star i {
+  font-size : 15px ; 
+}
+.reviews-count {
+  text
+}
+
+/* end cutomers */
+/* start footer  */
+
+.footer {
+  background-color : rgb(26,26,26) ; 
+}
+.footer ul li a {
+  color : rgb(187,187,187) ; 
+  transition: color 0.5s ease ; 
+}
+.footer ul li a:hover {
+  color:white ;
+}
+.footer h3   {
+  color : white 
+}
+.contact-info span , .subscribe p{
+  color : rgb(187,187,187) ; 
+}
+.subscribe input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  color: #fff;
+  outline:none ;
+
+}
+.subscribe input:focus {
+  border-bottom: 1px solid white;
+  background: none;
+  outline:none ;
+  box-shadow:none; 
+}
+.subscribe input::placeholder {
+  color:rgb(71,71,71) ;
+  font-style:italic ; 
+}
+.subscribe button  {
+  background-color: transparent;
+  border: none;
+  margin-left: -50px ;
+}
+.bordertop {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bordertop p , .social i{
+  color : rgb(187,187,187) ;
+  transition : color 0.5s ease ; 
+}
+.social i:hover {
+  color: white ; 
+}
+/* end footer  */
+
+
+
+/*               Media Query             */
+
+/* navbar */
+@media only screen and (max-width: 992px) {
+  .navbar .links {
+    background-color: #fff;
+    z-index: 100;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar .nav-item .nav-link {
+    color: #000;
+  }
+  .navbar .nav-item .active {
+    color: #65c0ba;
+  }
+  .container-fluid {
+    padding: 0px;
+  }
+
+  .navbar .navbar-brand {
+    padding: 20px;
+  }
+  .navbar .navbar-toggler {
+    margin: 20px;
+  }
+}
+
+/* header */
+@media only screen (max-width: 992px) {
+  .header .heading {
+    font-size: 40px;
+  }
+  .header .sub-heading {
+    font-size: 20px;
+  }
+}
+
+/* welcome */
+@media only screen and (max-width: 992px) {
+  .welcome .content {
+    margin-top: 30px;
+  }
+}
+
+/* home slider */
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+  .slider-header h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .slider-section .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen (min-width: 768px) {
+  .slider-section .col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen (max-width: 991.98px) {
+  .slider-section h2 {
+    font-size: 40px;
+  }
+}
+
+/* blog section  */
+@media only screen and (max-width: 768px) {
+  .blog-post-entry {
+    margin-top:-350px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-section .home{
+    width: 100% ;
+    margin: 0px;
+  }
+}
+
+/* slider */
+@media only screen and (max-width: 992px) {
+  .home .carousel-indicators {
+    position:relative ; 
+    margin-bottom:40px
+  }
+  ..carousel-inner {
+      width: 80%;
+      height: 90%;
+      top: 10%;
+      left: 10%;
+  }
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .carousel-inner {
+        height: 70%;
+    }
+    
+}
+
+    @media only screen and (max-width: 576px) {
+      .carousel-inner{
+       width: 100% ;
+       height : 50% ;
+       margin-top: 30%;
+     }
+   }
+   
